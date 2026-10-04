@@ -744,10 +744,13 @@ if(e.t=='elite'&&G){
   cx.fillStyle='#ffd23c';cx.beginPath();cx.roundRect(-r*.14,r*.1,r*.28,r*.3,3);cx.fill();oc(2);
  }else if(zi===2){ // Noise Phantom: hantu berlapis, berkedip seperti sinyal
   const fl=hs(Math.floor(t*9),7)>.78;
-  for(let k=2;k>=0;k--){const o=Math.sin(t*3+k*1.7)*r*.12*k;cx.globalAlpha=k==0?.95:.3;cx.beginPath();cx.arc(o,-r*.35-k*3,r*.85,Math.PI,0);cx.lineTo(r*.85+o,r*1.0);for(let j=0;j<5;j++)cx.lineTo(r*.85+o-(j+.5)*r*.34,r*(j%2?1.0:.6));cx.closePath();cx.fillStyle=['#f4fdff','#7fe9ff','#c9a8ff'][k];cx.fill();if(k==0)oc(3)}
+  const body=o=>{cx.beginPath();cx.arc(o,-r*.35,r*.85,Math.PI,0);cx.lineTo(r*.85+o,r*1.0);for(let j=0;j<5;j++)cx.lineTo(r*.85+o-(j+.5)*r*.34,r*(j%2?1.0:.6));cx.closePath()};
+  for(let k=2;k>=0;k--){const o=Math.sin(t*3+k*1.7)*r*.06*k;cx.globalAlpha=k==0?.95:.18;body(o);cx.fillStyle=['#f4fdff','#7fe9ff','#c9a8ff'][k];cx.fill();if(k==0)oc(3)}
   cx.globalAlpha=1;
-  cx.save();cx.beginPath();cx.rect(0,-r*1.3,r*1.2,r*2.6);cx.clip();cx.globalAlpha=fl?.12:.55;cx.fillStyle='#2a1458';cx.fillRect(-r,-r*1.3,r*2.2,r*2.6);cx.restore();cx.globalAlpha=1;
-  const q=Math.floor(t*10);for(let k=0;k<14;k++){cx.fillStyle=hs(k,q)>.5?'#ffffffcc':'#7fe9ff99';cx.fillRect(-r*.8+hs(k+3,q)*r*1.6,-r*1.1+hs(q,k)*r*2,4,4)}
+  cx.save();body(0);cx.clip();
+  cx.globalAlpha=fl?.18:.3;cx.fillStyle='#4a2a8a';cx.fillRect(0,-r*1.3,r*1.2,r*2.6);cx.globalAlpha=1;
+  const q=Math.floor(t*10);for(let k=0;k<10;k++){cx.fillStyle=hs(k,q)>.5?'#ffffffcc':'#7fe9ff99';cx.fillRect(-r*.8+hs(k+3,q)*r*1.6,-r*1.1+hs(q,k)*r*2,4,4)}
+  cx.restore();
   eyes(0,-r*.45,r*.2,'#2a1458',0);cx.fillStyle='#2a1458';cx.beginPath();cx.ellipse(0,-r*.05,r*.16,r*.1+Math.abs(w)*r*.05,0,0,7);cx.fill();
  }else if(zi===3){ // Loop Golem: golem batu dengan roda gigi dan panah melingkar
   for(const d of[-1,1]){cx.beginPath();cx.roundRect(d*r*.95-r*.28,-r*.25+w*d*2,r*.56,r*.9,6);cx.fillStyle='#6d7f8e';cx.fill();oc(3)}
