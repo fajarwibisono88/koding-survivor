@@ -13,3 +13,5 @@ Mekanisme pembelajaran dan permainan tetap mengikuti versi sebelumnya.
 
 Pembaruan: peta mulus per zona, skin monster, peluru dan XP bintang yang kontras, pre/post-test 15 soal, mini-materi, fokus Kelas VII.
 Unggah seluruh isi folder ini ke repositori GitHub lalu aktifkan GitHub Pages.
+
+Pembaruan audio dan tampilan: musik menu dan musik saat soal, kontras pemain/drone/kabut, gaya elite dan bos disamakan dengan monster zona, istilah umum diindonesiakan.
