@@ -1,7 +1,7 @@
 // Koding Survivor — cache aplikasi dan fallback navigasi offline.
-const CACHE = 'koding-survivor-storybook-cartoon-v10';
+const CACHE = 'koding-survivor-storybook-cartoon-v11';
 const APP = './index.html';
-const ASSETS = [APP, './', './manifest.webmanifest', './icon.svg'];
+const ASSETS = [APP, './', './manifest.webmanifest', './icon.svg', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
