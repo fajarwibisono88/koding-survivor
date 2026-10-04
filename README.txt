@@ -15,3 +15,4 @@ Pembaruan: peta mulus per zona, skin monster, peluru dan XP bintang yang kontras
 Unggah seluruh isi folder ini ke repositori GitHub lalu aktifkan GitHub Pages.
 
 Pembaruan audio dan tampilan: musik menu dan musik saat soal, kontras pemain/drone/kabut, gaya elite dan bos disamakan dengan monster zona, istilah umum diindonesiakan.
+Penjaga zona (mini bos) kini punya bentuk dan ciri khas sendiri: Data Slime, Pattern Mimic, Noise Phantom, Loop Golem, Fragment Beast.
