@@ -1,5 +1,5 @@
 // Koding Survivor — cache aplikasi dan fallback navigasi offline.
-const CACHE = 'koding-survivor-storybook-cartoon-v3';
+const CACHE = 'koding-survivor-storybook-cartoon-v6';
 const APP = './index.html';
 const ASSETS = [APP, './', './manifest.webmanifest', './icon.svg'];
 
